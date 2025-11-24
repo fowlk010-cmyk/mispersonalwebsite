@@ -1,0 +1,84 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson Fowlkes Personal Website</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+    <h3>Hello, my name is Jackson Fowlkes and this is my personal website.</h3>
+
+    <!-- Navigation Menu (same on all pages) -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="discover.html">Discover UMD</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="game.html" id="gameBtn">Game</a></li>
+        </ul>
+    </nav>
+
+    <h1>Welcome to my Home Page</h1>
+
+    <!-- ⭐ Intro Video Section -->
+    <div style="text-align: center; margin-top: 2rem;">
+        <video width="650" controls style="border-radius: 10px; box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+            <source src="videos/IntroVidpt2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Headshot -->
+    <div style="margin: 2rem 0; text-align: center;">
+        <img src="../images/Headshot.webp" alt="Jackson Fowlkes Headshot" style="max-width: 300px; height: auto; border-radius: 8px; box-shadow: 0 4px 18px rgba(0,0,0,0.10);">
+    </div>
+
+    <main>
+
+        <!-- ⭐ Hobby Section 1: Basketball -->
+        <section style="margin: 2.5rem 0; text-align: center;">
+            <h2>Basketball</h2>
+            <img src="../images/Hoops.jpeg" alt="Basketball Image" 
+                 style="max-width: 400px; width:100%; border-radius: 10px; box-shadow: 0 4px 18px rgba(0,0,0,0.15); margin-bottom: 12px;">
+            <p style="max-width: 700px; margin: 0 auto; font-size: 1.1rem; line-height: 1.6;">
+                Basketball has always been a big part of my life. I love the competitive nature of the game, 
+                the teamwork involved, and the fast-paced energy that comes with every play.  
+                Whether I'm shooting around with friends or playing in games in front of hundreds of people, 
+                basketball is one of my favorite ways to stay active and have fun.
+            </p>
+        </section>
+
+        <!-- ⭐ Hobby Section 2: Hanging Out With Friends -->
+        <section style="margin: 2.5rem 0; text-align: center;">
+            <h2>Hanging Out With Friends</h2>
+            <img src="../images/Jowen.jpeg" alt="Hanging Out With Friends" 
+                 style="max-width: 400px; width:100%; border-radius: 10px; box-shadow: 0 4px 18px rgba(0,0,0,0.15); margin-bottom: 12px;">
+            <p style="max-width: 700px; margin: 0 auto; font-size: 1.1rem; line-height: 1.6;">
+                Spending time with friends is one of the things I value most. Whether we're exploring new places, 
+                relaxing, or just enjoying each other's company, these moments always create some of my best memories.  
+                Having a great group of friends has made my time at UMD even more meaningful and enjoyable.
+            </p>
+        </section>
+
+    </main>
+
+    <script>
+    document.getElementById('gameBtn').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = 'game.html';
+        setTimeout(function() {
+            window.postMessage('triggerChipRain', '*');
+        }, 300);
+    });
+    </script>
+
+    <script src="js/script.js"></script>
+
+<footer>2025 Jackson Fowlkes. All rights reserved</footer>
+
+</body>
+</html>
